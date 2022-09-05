@@ -56,4 +56,64 @@ for _,skin in ipairs(mod.krub_armor_skins) do
 	table.insert(menu.options.widgets[1].sub_widgets, widget)
 end
 
+--bard armor
+for _,skin in ipairs(mod.bard_armor_skins) do
+	local widget = table.clone(shield_sub_choice, true)
+	widget.setting_id = skin
+	widget.title = skin
+	local x = 1
+	for Amoury_key,skin_name  in pairs(mod.bard_armors) do
+		local choice = {text = Amoury_key,   value = Amoury_key}
+		table.insert(widget.options, choice)
+	end
+	num_skins = num_skins + 1
+	table.insert(menu.options.widgets[1].options[3].show_widgets, num_skins)
+	table.insert(menu.options.widgets[1].sub_widgets, widget)
+end
+
+--ker armor
+for _,skin in ipairs(mod.ker_armor_skins) do
+	local widget = table.clone(shield_sub_choice, true)
+	widget.setting_id = skin
+	widget.title = skin
+	local x = 1
+	for Amoury_key,skin_name  in pairs(mod.ker_armors) do
+		local choice = {text = Amoury_key,   value = Amoury_key}
+		table.insert(widget.options, choice)
+	end
+	num_skins = num_skins + 1
+	table.insert(menu.options.widgets[1].options[5].show_widgets, num_skins)
+	table.insert(menu.options.widgets[1].sub_widgets, widget)
+end
+
+--wiz armor
+for _,skin in ipairs(mod.wiz_armor_skins) do
+	local widget = table.clone(shield_sub_choice, true)
+	widget.setting_id = skin
+	widget.title = skin
+	local x = 1
+	for Amoury_key,skin_name  in pairs(mod.wiz_armors) do
+		local choice = {text = Amoury_key,   value = Amoury_key}
+		table.insert(widget.options, choice)
+	end
+	num_skins = num_skins + 1
+	table.insert(menu.options.widgets[1].options[6].show_widgets, num_skins)
+	table.insert(menu.options.widgets[1].sub_widgets, widget)
+end
+
+--salts armor
+for _,skin in ipairs(mod.salts_armor_skins) do
+	local widget = table.clone(shield_sub_choice, true)
+	widget.setting_id = skin
+	widget.title = skin
+	local x = 1
+	for Amoury_key,skin_name  in pairs(mod.salts_armors) do
+		local choice = {text = Amoury_key,   value = Amoury_key}
+		table.insert(widget.options, choice)
+	end
+	num_skins = num_skins + 1
+	table.insert(menu.options.widgets[1].options[4].show_widgets, num_skins)
+	table.insert(menu.options.widgets[1].sub_widgets, widget)
+end
+
 return menu

@@ -65,9 +65,35 @@ local skins_to_change = {}
 
 mod.krub_armor_skins = {
 	"skin_es_knight_white",
+    "skin_es_mercenary_white",
+    "skin_es_huntsman_white",
+}
+mod.bard_armor_skins = {
+	"skin_dr_ironbreaker_white",
+    "skin_dr_slayer_white",
+    "skin_dr_ranger_white",
+}
+mod.ker_armor_skins = {
+    "skin_ww_shade_white",
+    "skin_ww_maidenguard_white",
+    "skin_ww_waywatcher_white",
+}
+mod.wiz_armor_skins = {
+	"skin_bw_adept_white",
+    "skin_bw_scholar_white",
+    "skin_bw_unchained_white",
+}
+mod.salts_armor_skins = {
+	"skin_wh_captain_white",
+    "skin_wh_bountyhunter_white",
+    "skin_wh_zealot_white",
 }
 
 table.append(skins_to_change, mod.krub_armor_skins)
+table.append(skins_to_change, mod.bard_armor_skins)
+table.append(skins_to_change, mod.ker_armor_skins)
+table.append(skins_to_change, mod.wiz_armor_skins)
+table.append(skins_to_change, mod.salts_armor_skins)
 
 --this mod table is used for the vmf menu localization
 mod.vanilla_game_strings = table.clone(skins_to_change, true)

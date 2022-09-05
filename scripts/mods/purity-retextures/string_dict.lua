@@ -14,8 +14,36 @@ mod.krub_armors = {
     Kruber_purity_armor = "Purity Skin Retexture",
 }
 
+mod.bard_armors = {
+    Kruber_purity_armor = "Purity Skin Retexture",
+}
+
+mod.ker_armors = {
+    Kruber_purity_armor = "Purity Skin Retexture",
+}
+
+mod.wiz_armors = {
+    Kruber_purity_armor = "Purity Skin Retexture",
+}
+
+mod.salts_armors = {
+    Kruber_purity_armor = "Purity Skin Retexture",
+}
+
 --merges all the upbove tables together to be used for another mod table that is sent to the localization hook
 for k,v in pairs(mod.krub_armors) do
+    name_strings[k] = v
+end
+for k,v in pairs(mod.bard_armors) do
+    name_strings[k] = v
+end
+for k,v in pairs(mod.ker_armors) do
+    name_strings[k] = v
+end
+for k,v in pairs(mod.wiz_armors) do
+    name_strings[k] = v
+end
+for k,v in pairs(mod.salts_armors) do
     name_strings[k] = v
 end
 
