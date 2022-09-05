@@ -91,12 +91,24 @@ function mod.apply_new_skin_from_texture(Armoury_key, world, skin, unit)
         local norm = mod.SKIN_LIST[Armoury_key].textures[3]
 
         local hand = mod.SKIN_LIST[Armoury_key].swap_hand
+
+        if mod.SKIN_LIST[Armoury_key].mats_to_use_3p then 
+            for mat_slot, mat in pairs(mod.SKIN_LIST[Armoury_key].mats_to_use_3p) do 
+                Unit.set_material(unit, mat_slot, mat)
+            end
+        end
         
         apply_texture_to_all_world_units(world, unit, diff_slot, pack_slot, norm_slot, diff, MAB, norm, Armoury_key, is_fps_unit)
     elseif mod.SKIN_LIST[Armoury_key].textures_fps and is_fps_unit then 
         local diff = mod.SKIN_LIST[Armoury_key].textures_fps[1]
         local MAB = mod.SKIN_LIST[Armoury_key].textures_fps[2]
         local norm = mod.SKIN_LIST[Armoury_key].textures_fps[3]
+
+        if mod.SKIN_LIST[Armoury_key].mats_to_use_1p then 
+            for mat_slot, mat in pairs(mod.SKIN_LIST[Armoury_key].mats_to_use_1p) do 
+                Unit.set_material(unit, mat_slot, mat)
+            end
+        end
         
         apply_texture_to_all_world_units(world, unit, diff_slot, pack_slot, norm_slot, diff, MAB, norm, Armoury_key, is_fps_unit)
     end

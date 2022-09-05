@@ -2,7 +2,6 @@ local mod = get_mod("purity-retextures")
 mod:dofile("scripts/mods/purity-retextures/skin_list")
 
 local desc_strings = {
-    Kruber_KOTBS_armor = "To accomplish any task - to defeat any foe, all that is needed is a keen eye, a sharp mind and the favour of the Goddess.",
     Kruber_purity_armor = "Purity Skin Retexture",
 }
 
@@ -12,7 +11,6 @@ local name_strings = {}
 --the order of shields only matters for vmf menu and it is displayed as the reverse
 
 mod.krub_armors = {
-    Kruber_KOTBS_armor = "Blessed Plate of the Blazing Sun",
     Kruber_purity_armor = "Purity Skin Retexture",
 }
 
