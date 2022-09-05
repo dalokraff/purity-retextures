@@ -1,0 +1,11 @@
+mod = [
+	"purity-retextures"
+]
+
+package = [
+	"resource_packages/purity-retextures/purity-retextures"
+]
+
+lua = [
+	"scripts/mods/purity-retextures/*"
+]
