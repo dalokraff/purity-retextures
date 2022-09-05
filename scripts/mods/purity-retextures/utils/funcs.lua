@@ -94,7 +94,9 @@ function mod.apply_new_skin_from_texture(Armoury_key, world, skin, unit)
 
         if mod.SKIN_LIST[Armoury_key].mats_to_use_3p then 
             for mat_slot, mat in pairs(mod.SKIN_LIST[Armoury_key].mats_to_use_3p) do 
-                Unit.set_material(unit, mat_slot, mat)
+                if Unit.alive(unit) then
+                    Unit.set_material(unit, mat_slot, mat)
+                end
             end
         end
         
@@ -106,7 +108,9 @@ function mod.apply_new_skin_from_texture(Armoury_key, world, skin, unit)
 
         if mod.SKIN_LIST[Armoury_key].mats_to_use_1p then 
             for mat_slot, mat in pairs(mod.SKIN_LIST[Armoury_key].mats_to_use_1p) do 
-                Unit.set_material(unit, mat_slot, mat)
+                if Unit.alive(unit) then
+                    Unit.set_material(unit, mat_slot, mat)
+                end
             end
         end
         

@@ -8,9 +8,9 @@ mod.SKIN_LIST = {
         mats_to_use_3p = {
             mtr_outfit = "units/beings/player/empire_soldier_knight/third_person_base/mtr_outfit",
         },
-        -- mats_to_use_1p = {
-        --     mtr_outfit = "units/beings/player/empire_soldier_knight/third_person_base/mtr_outfit",
-        -- },
+        mats_to_use_1p = {
+            mtr_outfit = "units/beings/player/empire_soldier_knight/first_person_base/mtr_outfit",
+        },
         skin_to_swap = {
             skin_es_knight_white = "skin_es_knight_white",
         },
